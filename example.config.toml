@@ -1,0 +1,16 @@
+name = "App"
+host = ""
+port = 8080
+cache = false
+log = true
+
+[service.api.v1.simple]
+servers = ["http://x.com"]
+
+[service.api.v1.random]
+method = "random"
+servers = [
+    "https://example.workers.dev",
+    "https://example.run.app",
+    "https://example.us-east-1.on.aws/",
+]
